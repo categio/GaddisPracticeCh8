@@ -32,6 +32,7 @@
             this.instructionLabel = new System.Windows.Forms.Label();
             this.formatButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // numberTextBox
@@ -52,27 +53,40 @@
             // 
             // formatButton
             // 
-            this.formatButton.Location = new System.Drawing.Point(64, 106);
+            this.formatButton.Location = new System.Drawing.Point(19, 106);
             this.formatButton.Name = "formatButton";
             this.formatButton.Size = new System.Drawing.Size(75, 23);
             this.formatButton.TabIndex = 2;
-            this.formatButton.Text = "Format";
+            this.formatButton.Text = "&Format";
             this.formatButton.UseVisualStyleBackColor = true;
+            this.formatButton.Click += new System.EventHandler(this.formatButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(145, 106);
+            this.exitButton.Location = new System.Drawing.Point(182, 106);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 3;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(101, 106);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 4;
+            this.clearButton.Text = "&Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 140);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.formatButton);
             this.Controls.Add(this.instructionLabel);
@@ -90,6 +104,7 @@
         private System.Windows.Forms.Label instructionLabel;
         private System.Windows.Forms.Button formatButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 
